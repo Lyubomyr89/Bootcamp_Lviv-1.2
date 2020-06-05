@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>Title</h1>
+    <h2>Title2</h2>
+
+    <header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ut.</p>
+    </header>
+
+    <form class="user-reg" action="#" name="user-reg" method="GET" enctype="multipart/form-data">
+        <label for="user-name">Імя користувача</label>
+        <input type="text" name="user-name" id="user-name" required minlength="2" maxlength="30"
+            placeholder="user name">
+
+        <input type="tel" name="user-phone" placeholder="096-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <input type="email" name="user-email" required placeholder="user email">
+
+        <input type="file" name="user-file">
+
+        <div class="checkbox">
+            <label>red<input type="checkbox" name="color" checked value="red"></label>
+            <label>blue<input type="checkbox" name="color" value="blue"></label>
+            <label>green<input type="checkbox" name="color" value="green"></label>
+        </div>
+
+        <div class="radio">
+            <label>red<input type="radio" name="color2" checked value="red"></label>
+            <label>blue<input type="radio" name="color2" value="blue"></label>
+            <label>green<input type="radio" name="color2" value="green"></label>
+        </div>
+
+        <div>
+            <select name="city">
+                <option disabled selected>Виберіть місто</option>
+                <option name"city" value="Київ">Київ</option>
+                <option name"city" value="ЛЬвів">ЛЬвів</option>
+                <option name"city" value="Одеса">Одеса</option>
+            </select>
+        </div>
+        <button class="btn send" type="submit">Відправити</button>
+        <button class="btn reset" type="reset">Очистити</button>
+    </form>
+</body>
+
+</html>

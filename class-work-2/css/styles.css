@@ -1,0 +1,168 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700italic - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"),
+    url("../fonts/montserrat-v14-latin_cyrillic-700italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-700italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* kaushan-script-regular - latin */
+@font-face {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kaushan Script"), local("KaushanScript-Regular"),
+    url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+  font-style: italic;
+}
+
+p {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+}
+
+.user-reg *{
+    outline: none;
+}
+.user-reg {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #888888;
+}
+
+.user-reg input{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid gray;
+    margin: 10px 0 10px;
+}
+
+.user-reg input:focus:invalid{
+    border-color: red;
+}
+
+.user-reg input:focus:valid{
+    border-color: blue;
+}
+
+
+.send:hover{
+    animation-play-state: running;
+}
+
+.reset{
+    transform: scale(0);
+    animation: scale 1 linear 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(.2);
+    }
+
+    50%{
+        opacity: .5;
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.send{
+    animation: wobble infinite linear 2s;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes wobble {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    15% {
+      -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+  
+    30% {
+      -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    45% {
+      -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    60% {
+      -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }

@@ -1,0 +1,112 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700italic - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"),
+    url("../fonts/montserrat-v14-latin_cyrillic-700italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-700italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* kaushan-script-regular - latin */
+@font-face {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kaushan Script"), local("KaushanScript-Regular"),
+    url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* @media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+} */
+
+.title{
+  text-align: center;
+}
+
+.g-item {
+  height: 150px;
+  border: 1px solid red;
+  background-color: #ccc;
+  background-clip: content-box;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: [left] 100px repeat(3, [box] 1fr) [right] 200px;
+  grid-template-rows: [top] 150px [middle] 250px [bottom] 350px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  border: 1px solid green;
+}
+
+.grid-item {
+  padding: 20px;
+  border: 1px solid red;
+  background: #999;
+  border-radius: 20px;
+
+  /* grid-column-start: 1; */
+  /* grid-column-end: 4; */
+
+  /* grid-row: middle / -1;
+  grid-column: 3 /-1; */
+
+  /* grid-area: middle/3/-1/-1; */
+  
+
+  /* grid-row-start: middle;
+  grid-row-end: bottom 2; */
+
+}
+
+.first{
+  grid-row: 1 / span 2;
+  grid-column: 1/span 3;
+}
